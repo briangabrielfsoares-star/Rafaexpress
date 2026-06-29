@@ -4,7 +4,7 @@
 // ===============================
 
 const CONFIG = {
-  nomeNegocio: "RafaExpress",
+  nomeNegocio: "SoaresExpress",
   nomeEntregador: "Rafa",
   cidade: "Sua cidade",
   telefoneWhatsApp: "553198104460", // Ex: 5511999999999, sem +, espaços ou traços.
