@@ -1,4 +1,4 @@
-# RafaExpress - Site de Entregas de Moto
+1111111111111111# RafaExpress - Site de Entregas de Moto
 
 Site completo, responsivo e com visual rústico/premium para delivery de moto.
 
@@ -19,7 +19,7 @@ const CONFIG = {
   nomeEntregador: "Rafa",
   cidade: "Sua cidade",
   telefoneWhatsApp: "5500000000000",
-  gasolinaLitro: 7,
+  gasolinaLitro: 6,11,
   taxaBase: 10,
   precoPorKm: 2,
   valorMinimo: 15
