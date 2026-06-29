@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#1f130b" />
+  <meta name="description" content="RafaExpress - entregas rápidas de moto com cálculo de frete online e atendimento pelo WhatsApp." />
+  <title>RafaExpress | Entregas de Moto</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="noise" aria-hidden="true"></div>
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <header class="topbar" id="topbar">
+    <a class="brand magnetic" href="#inicio">
+      <span class="brand-icon"><span class="wheel"></span><span class="bike-icon">🏍️</span></span>
+      <span><strong>RafaExpress</strong><small>Delivery de moto</small></span>
+    </a>
+
+    <button class="menu-btn" id="menuBtn" aria-label="Abrir menu"><span></span><span></span><span></span></button>
+
+    <nav class="nav" id="nav">
+      <a href="#servicos">Serviços</a>
+      <a href="#calculadora">Calcular frete</a>
+      <a href="#vantagens">Vantagens</a>
+      <a href="#contato">Contato</a>
+    </nav>
+
+    <div class="header-actions">
+      <button class="sound-btn magnetic" id="soundBtn" type="button" aria-pressed="false">🔇 Som</button>
+      <a class="btn btn-whatsapp magnetic header-whats" id="headerWhatsapp" href="#" target="_blank" rel="noopener">WhatsApp</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="orb orb-1"></div><div class="orb orb-2"></div>
+      <div class="hero-content">
+        <span class="eyebrow reveal">Entrega rápida • moto delivery • orçamento online</span>
+        <h1 class="reveal delay-1">RafaExpress entrega rápido, cobra justo e resolve sem enrolação.</h1>
+        <p class="reveal delay-2">Entregas de moto para documentos, pequenos pacotes, compras, encomendas e corridas urgentes. Calcule o frete, envie o pedido pelo WhatsApp e combine tudo direto com o Rafa.</p>
+        <div class="hero-actions reveal delay-3">
+          <a class="btn btn-primary magnetic" href="#calculadora">Calcular frete agora</a>
+          <a class="btn btn-light magnetic" href="#servicos">Ver serviços</a>
+        </div>
+        <div class="trust-grid reveal delay-4">
+          <div><strong>R$ 2/km</strong><span>preço por distância</span></div>
+          <div><strong>R$ 7/L</strong><span>gasolina considerada</span></div>
+          <div><strong>Mobile</strong><span>perfeito no celular</span></div>
+        </div>
+      </div>
+
+      <aside class="ticket reveal delay-2">
+        <div class="ticket-head"><span>Pedido rápido</span><strong>RafaExpress</strong></div>
+        <div class="route">
+          <div><span class="pin start"></span><p>Coleta no endereço</p></div>
+          <div class="route-line"></div>
+          <div><span class="pin end"></span><p>Entrega com cuidado</p></div>
+        </div>
+        <div class="bike-scene" aria-hidden="true">
+          <div class="road"></div><div class="moto-run">🏍️</div>
+          <span class="dust dust-1"></span><span class="dust dust-2"></span><span class="dust dust-3"></span>
+        </div>
+        <a class="btn btn-primary full magnetic" href="#calculadora">Fazer orçamento</a>
+      </aside>
+    </section>
+
+    <section class="marquee" aria-label="Destaques">
+      <div class="marquee-track">
+        <span>⚡ Entrega expressa</span><span>📦 Pacotes pequenos</span><span>📄 Documentos</span><span>🏪 Comércios locais</span><span>🌧️ Chuva</span><span>🌙 Noite</span>
+        <span>⚡ Entrega expressa</span><span>📦 Pacotes pequenos</span><span>📄 Documentos</span><span>🏪 Comércios locais</span><span>🌧️ Chuva</span><span>🌙 Noite</span>
+      </div>
+    </section>
+
+    <section class="section" id="servicos">
+      <div class="section-heading">
+        <span class="eyebrow reveal">Serviços</span>
+        <h2 class="reveal delay-1">Um site com cara forte, rústica e profissional.</h2>
+        <p class="reveal delay-2">Feito para chamar atenção no celular, passar confiança e transformar visita em pedido no WhatsApp.</p>
+      </div>
+      <div class="cards">
+        <article class="card tilt reveal"><span class="card-icon">📄</span><h3>Documentos</h3><p>Contratos, papéis, assinaturas e documentos importantes.</p></article>
+        <article class="card tilt reveal delay-1"><span class="card-icon">📦</span><h3>Pacotes</h3><p>Pequenas encomendas, compras, presentes e produtos de lojas.</p></article>
+        <article class="card tilt reveal delay-2"><span class="card-icon">⚡</span><h3>Expressa</h3><p>Entrega com prioridade para quem precisa resolver rápido.</p></article>
+        <article class="card tilt reveal delay-3"><span class="card-icon">🏪</span><h3>Comércios</h3><p>Ideal para lojas, mercados, oficinas, farmácias e pequenos negócios.</p></article>
+      </div>
+    </section>
+
+    <section class="calculator-section" id="calculadora">
+      <div class="calculator-info">
+        <span class="eyebrow reveal">Calculadora de frete</span>
+        <h2 class="reveal delay-1">Frete com valor claro antes do cliente chamar.</h2>
+        <p class="reveal delay-2">O cálculo usa taxa base, distância, tipo de entrega, tamanho do pacote, período, ida/volta e extras. O preço por km ficou em R$ 2,00.</p>
+        <div class="price-board reveal delay-3">
+          <h3>Tabela configurada</h3>
+          <div class="price-line"><span>Taxa base</span><strong id="baseFeeLabel">R$ 10,00</strong></div>
+          <div class="price-line"><span>Preço por km</span><strong id="kmFeeLabel">R$ 2,00</strong></div>
+          <div class="price-line"><span>Valor mínimo</span><strong id="minFeeLabel">R$ 15,00</strong></div>
+          <div class="price-line"><span>Gasolina</span><strong id="gasLabel">R$ 7,00/L</strong></div>
+          <p>Para mudar valores, telefone ou cidade, edite o arquivo <code>app.js</code>.</p>
+        </div>
+      </div>
+
+      <form class="calculator-card reveal delay-2" id="freteForm">
+        <div class="form-title"><span>🧾</span><div><h3>Orçamento rápido</h3><p>Preencha e mande tudo pronto pelo WhatsApp.</p></div></div>
+        <div class="form-grid">
+          <label>Nome do cliente<input id="cliente" type="text" placeholder="Ex: João Silva" required /></label>
+          <label>Telefone<input id="telefone" type="tel" placeholder="Ex: (11) 99999-9999" /></label>
+          <label>Endereço de retirada<input id="origem" type="text" placeholder="Rua, número, bairro" required /></label>
+          <label>Endereço de entrega<input id="destino" type="text" placeholder="Rua, número, bairro" required /></label>
+          <label>Distância aproximada<div class="input-suffix"><input id="distancia" type="number" min="0.1" step="0.1" placeholder="Ex: 7.5" required /><span>km</span></div></label>
+          <label>Tipo de entrega<select id="tipo"><option value="normal">Normal</option><option value="expressa">Expressa +35%</option><option value="urgente">Urgente +55%</option><option value="agendada">Agendada</option></select></label>
+          <label>Pacote<select id="tamanho"><option value="documento">Documento / envelope</option><option value="pequeno">Pequeno</option><option value="medio">Médio +R$ 5,00</option><option value="grande">Grande +R$ 10,00</option></select></label>
+          <label>Período<select id="periodo"><option value="dia">Dia normal</option><option value="noite">Noite +20%</option><option value="chuva">Chuva +25%</option><option value="noiteChuva">Noite + chuva +40%</option></select></label>
+        </div>
+        <div class="extras">
+          <label><input id="idaVolta" type="checkbox" /> Ida e volta / retorno com comprovante</label>
+          <label><input id="foraArea" type="checkbox" /> Fora da área principal +R$ 12,00</label>
+          <label><input id="espera" type="checkbox" /> Pode ter espera no local +R$ 7,00</label>
+          <label><input id="fragil" type="checkbox" /> Item frágil / cuidado extra +R$ 5,00</label>
+        </div>
+        <button class="btn btn-primary full magnetic" type="submit">Calcular frete</button>
+        <div class="result" id="resultado" hidden>
+          <span>Valor estimado</span><strong id="valorFrete">R$ 0,00</strong><p id="resumoFrete"></p>
+          <div class="breakdown" id="breakdown"></div>
+          <div class="result-actions"><a class="btn btn-whatsapp magnetic" id="sendWhatsapp" href="#" target="_blank" rel="noopener">Enviar no WhatsApp</a><button class="btn btn-dark magnetic" id="copiarPedido" type="button">Copiar pedido</button></div>
+        </div>
+      </form>
+    </section>
+
+    <section class="section advantages" id="vantagens">
+      <div class="section-heading center"><span class="eyebrow reveal">Vantagens</span><h2 class="reveal delay-1">O cliente entende rápido e faz o pedido sem complicação.</h2></div>
+      <div class="timeline">
+        <div class="timeline-item reveal"><span>01</span><h3>Calcula</h3><p>Informa distância e detalhes para ver o valor estimado.</p></div>
+        <div class="timeline-item reveal delay-1"><span>02</span><h3>Envia</h3><p>O site monta a mensagem completa para o WhatsApp.</p></div>
+        <div class="timeline-item reveal delay-2"><span>03</span><h3>Confirma</h3><p>O Rafa confirma horário, rota e valor final.</p></div>
+        <div class="timeline-item reveal delay-3"><span>04</span><h3>Entrega</h3><p>A corrida é feita com cuidado e rapidez.</p></div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="reveal"><span class="eyebrow">Chamada forte</span><h2>Precisa mandar algo agora?</h2><p>Calcule, envie pelo WhatsApp e combine sua entrega em poucos cliques.</p></div>
+      <a class="btn btn-primary magnetic reveal delay-1" href="#calculadora">Calcular entrega</a>
+    </section>
+
+    <section class="contact" id="contato">
+      <div class="contact-card reveal"><span class="eyebrow">Contato</span><h2>RafaExpress</h2><p>Delivery de moto com visual profissional, cálculo online e atendimento direto.</p><div class="contact-buttons"><a class="btn btn-whatsapp magnetic" id="contactWhatsapp" href="#" target="_blank" rel="noopener">Falar no WhatsApp</a><a class="btn btn-light magnetic" href="tel:+5500000000000">Ligar agora</a></div></div>
+      <div class="rustic-box reveal delay-1"><h3>Área de atendimento</h3><p>Edite aqui a cidade, bairros e regiões que o Rafa atende.</p><ul><li>Entregas locais</li><li>Corridas urgentes</li><li>Comércios parceiros</li><li>Pedido por WhatsApp</li></ul></div>
+    </section>
+  </main>
+
+  <footer class="footer"><div><strong>RafaExpress</strong><p>Delivery de moto rápido, rústico e profissional.</p></div><div><p><strong>Horário:</strong> Segunda a sábado, 8h às 20h</p><p><strong>Frete:</strong> taxa base + R$ 2,00 por km + adicionais.</p></div></footer>
+  <a class="floating-whatsapp magnetic" id="floatingWhatsapp" href="#" target="_blank" rel="noopener" aria-label="WhatsApp">💬</a>
+  <script src="app.js"></script>
+</body>
+</html>
