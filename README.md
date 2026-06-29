@@ -22,7 +22,7 @@ const CONFIG = {
   gasolinaLitro: 6,11,
   taxaBase: 10,
   precoPorKm: 2,
-  valorMinimo: 15
+  valorMinimo: 13
 };
 ```
 
@@ -31,7 +31,7 @@ const CONFIG = {
 Troque:
 
 ```js
-telefoneWhatsApp: "5500000000000"
+telefoneWhatsApp: "553198104460"
 ```
 
 Pelo número real com código do país e DDD, sem espaços, sem traços e sem o sinal de +.
@@ -39,7 +39,7 @@ Pelo número real com código do país e DDD, sem espaços, sem traços e sem o 
 Exemplo:
 
 ```js
-telefoneWhatsApp: "5511999999999"
+telefoneWhatsApp: "553198104460"
 ```
 
 ## Frete configurado
