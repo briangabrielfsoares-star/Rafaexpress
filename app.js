@@ -7,7 +7,7 @@ const CONFIG = {
   nomeNegocio: "RafaExpress",
   nomeEntregador: "Rafa",
   cidade: "Sua cidade",
-  telefoneWhatsApp: "5500000000000", // Ex: 5511999999999, sem +, espaços ou traços.
+  telefoneWhatsApp: "553198104460", // Ex: 5511999999999, sem +, espaços ou traços.
   gasolinaLitro: 7,
   taxaBase: 10,
   precoPorKm: 2,
